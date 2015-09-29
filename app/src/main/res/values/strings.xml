@@ -10,10 +10,16 @@
 
 
 
-    <!-- TODO: 登录页面 -->
+    <!-- 登录页面 -->
     <string name="view_login_txb_hit_username">请输入手机号</string>
     <string name="view_login_txb_hit_password">请填写密码</string>
     <string name="view_login_btn_login">登        录</string>
     <string name="view_login_btn_forgotPW">忘记密码？</string>
     <string name="view_login_btn_signup">还没有账号？</string>
+
+    <!-- 注册页面 -->
+    <string name="view_signup_btn_signUp">注        册</string>
+    <string name="view_signup_txb_hit_tel">请输入手机号</string>
+    <string name="view_signup_txb_hit_signCode">请填写验证码</string>
+    <string name="view_signup_txb_hit_password">输入数字、字母为登录密码</string>
 </resources>

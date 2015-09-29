@@ -91,7 +91,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:id="@+id/button"
+            android:id="@+id/loginActivity_btn_login"
             android:background="@drawable/button_bg"
             android:layout_marginTop="20dp"
             android:text="@string/view_login_btn_login"
@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/view_login_btn_signup"
-                android:id="@+id/textView2"
+                android:id="@+id/loginActivity_btn_signUp"
                 android:layout_weight="1"
                 android:gravity="right"
                 android:textColor="#00d5d5" />

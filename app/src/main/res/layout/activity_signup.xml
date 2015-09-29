@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_background">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpActivity_btn_back"
+        android:background="@drawable/btn_back_black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/signup_textview_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/icon_phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="icon_phone" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="36dp"
+                    android:background="@null"
+                    android:hint="@string/view_login_txb_hit_username"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/icon_mail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="icon_phone" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="36dp"
+                    android:background="@null"
+                    android:hint="@string/view_signup_txb_hit_signCode"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:layout_toLeftOf="@+id/signUpAcitvity_btn_getSignCode"
+                    android:layout_toStartOf="@+id/signUpAcitvity_btn_getSignCode"
+                    android:layout_marginRight="10dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signUpAcitvity_btn_getSignCode"
+                    android:background="@drawable/btn_get_signcode"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/icon_lock"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="icon_phone" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="36dp"
+                    android:background="@null"
+                    android:hint="@string/view_signup_txb_hit_password"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:layout_toLeftOf="@+id/imageView7"
+                    android:layout_toStartOf="@+id/imageView7"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:background="@drawable/icon_eye"
+                    android:contentDescription="icon_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/signUpActivity_btn_login"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="20dp"
+            android:text="@string/view_signup_btn_signUp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
