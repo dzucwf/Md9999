@@ -22,4 +22,8 @@
     <string name="view_signup_txb_hit_tel">请输入手机号</string>
     <string name="view_signup_txb_hit_signCode">请填写验证码</string>
     <string name="view_signup_txb_hit_password">输入数字、字母为登录密码</string>
+
+    <!-- 服务页面 -->
+    <string name="view_service_title">服 务</string>
+    <string name="view_service_doctorRecommend">专家推荐</string>
 </resources>
