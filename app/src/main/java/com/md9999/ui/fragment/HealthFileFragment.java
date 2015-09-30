@@ -27,5 +27,14 @@ public class HealthFileFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_health_file, container, false);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        System.out.println("1");
+    }
 }

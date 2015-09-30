@@ -39,15 +39,24 @@ public class MyDoctorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewUtils.inject(this.getActivity());
 
+         View view =  inflater.inflate(R.layout.fragment_my_doctor, container, false);
+
+
+        ViewUtils.inject(this, view);
         data = getData();
         MyAdapter adapter = new MyAdapter(this.getActivity());
-        //listView = (ListView) this.getActivity().findViewById(R.id.myDoctorFragment_listView);
+        // listView = (ListView) this.getActivity().findViewById(R.id.myDoctorFragment_listView);
         listView.setAdapter(adapter);
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_doctor, container, false);
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
     }
 
     private List<Map<String, Object>> getData() {
