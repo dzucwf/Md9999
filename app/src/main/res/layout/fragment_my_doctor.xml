@@ -13,26 +13,27 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
             android:background="@color/system_NavBarBg">
 
-            <Button
+            <com.md9999.ui.controls.SegmentControl
+                xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button2" />
+                android:textSize="16sp"
+                segmentcontrol:texts="关注|互动"
+                segmentcontrol:colors="#009688"
+                segmentcontrol:cornerRadius="4dip"
+                segmentcontrol:direction="horizon"
+                segmentcontrol:verticalGap="8dip"
+                segmentcontrol:horizonGap="24dip"
+                segmentcontrol:selectedIndex="1"/>
         </LinearLayout>
 
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listView" />
+            android:id="@+id/myDoctorFragment_listView" />
 
     </LinearLayout>
 
