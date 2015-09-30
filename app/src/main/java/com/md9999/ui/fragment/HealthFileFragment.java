@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import com.md9999.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * 健康档案.
  */
 public class HealthFileFragment extends Fragment {
 

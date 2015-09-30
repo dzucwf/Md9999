@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A simple {@link Fragment} subclass.
+ *我的医生
  */
 public class MyDoctorFragment extends Fragment {
 
