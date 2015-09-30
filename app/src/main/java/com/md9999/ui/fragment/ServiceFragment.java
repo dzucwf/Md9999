@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import com.md9999.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ *我的服务
  */
 public class ServiceFragment extends Fragment {
 
