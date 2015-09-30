@@ -26,4 +26,11 @@
     <!-- 服务页面 -->
     <string name="view_service_title">服 务</string>
     <string name="view_service_doctorRecommend">专家推荐</string>
+
+    <string name="view_service_function_counseling_forText">图文咨询</string>
+    <string name="view_service_function_counseling_forTel">电话咨询</string>
+    <string name="view_service_function_counseling_forVideo">视频咨询</string>
+    <string name="view_service_function_myOrder">我的订单</string>
+    <string name="view_service_function_doctorRecommend">名医推荐</string>
+    <string name="view_service_function_findDoctor">找医生</string>
 </resources>
