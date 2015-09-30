@@ -2,11 +2,14 @@ package com.md9999.ui.fragment;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -15,6 +18,7 @@ import android.widget.TextView;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.md9999.R;
+import com.md9999.ui.activity.DrDetailAcitvity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,6 +53,16 @@ public class MyDoctorFragment extends Fragment {
         // listView = (ListView) this.getActivity().findViewById(R.id.myDoctorFragment_listView);
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                //Log.v("MyListViewBase", "你点击了ListView条目" + arg2);//在LogCat中输出信息
+
+                Intent intent = new Intent();
+                intent.setClass(getActivity(),DrDetailAcitvity.class);
+                startActivity(intent);
+            }
+        });
         // Inflate the layout for this fragment
         return view;
     }
