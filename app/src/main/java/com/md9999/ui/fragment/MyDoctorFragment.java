@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,7 @@ import android.widget.TextView;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.md9999.R;
-import com.md9999.ui.activity.DrDetailAcitvity;
+import com.md9999.ui.activity.DrDetailsAcitvity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,7 +58,7 @@ public class MyDoctorFragment extends Fragment {
                 //Log.v("MyListViewBase", "你点击了ListView条目" + arg2);//在LogCat中输出信息
 
                 Intent intent = new Intent();
-                intent.setClass(getActivity(),DrDetailAcitvity.class);
+                intent.setClass(getActivity(),DrDetailsAcitvity.class);
                 startActivity(intent);
             }
         });
