@@ -27,5 +27,15 @@ public class MineFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_mine, container, false);
     }
 
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            //fragment可见时执行加载数据或者进度条等
+        } else {
+            //不可见时不执行操作
+        }
+    }
+
 
 }

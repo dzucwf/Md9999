@@ -7,17 +7,18 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/navi_view_pager"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="0dip"
         android:layout_above="@+id/navi_switcher"
-        android:layout_marginBottom="-7dp"/>
+        android:layout_alignParentTop="true"
+
+        android:layout_marginBottom="-7dp"
+        android:padding="0dip" />
 
     <FrameLayout
+        android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/mainContainer"
         android:layout_alignBottom="@+id/navi_view_pager"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -32,38 +33,38 @@
         android:id="@+id/navi_switcher"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/border_top">
+        android:background="@drawable/border_top"
+        android:gravity="center"
+        android:orientation="horizontal">
         <ImageButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
             android:id="@+id/navi_switcher_item_service"
-            android:src="@drawable/data"
-            android:onClick="onNaviCheck"
-            android:layout_height="wrap_content" />
-        <ImageButton
             android:layout_width="0dp"
-            android:id="@+id/navi_switcher_item_health"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/patient"
+            android:onClick="onNaviCheck"
+            android:src="@drawable/data" />
+        <ImageButton
+            android:id="@+id/navi_switcher_item_health"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="onNaviCheck"
 
-            android:layout_height="wrap_content" />
+            android:src="@drawable/patient" />
         <ImageButton
-            android:layout_width="0dp"
             android:id="@+id/navi_switcher_item_doctor"
-            android:layout_weight="1"
-            android:src="@drawable/data"
-            android:onClick="onNaviCheck"
-            android:layout_height="wrap_content" />
-        <ImageButton
             android:layout_width="0dp"
-            android:id="@+id/navi_switcher_item_mine"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/data"
             android:onClick="onNaviCheck"
-            android:layout_height="wrap_content" />
+            android:src="@drawable/data" />
+        <ImageButton
+            android:id="@+id/navi_switcher_item_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNaviCheck"
+            android:src="@drawable/data" />
     </LinearLayout>
 </RelativeLayout>

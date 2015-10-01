@@ -24,32 +24,10 @@ public class MainActivity extends FragmentActivity {
     private static  final  int TAB_DOCTOR = 2;
 
     private static  final  int TAB_MINE = 3;
-
-
-
-
+    BtmNaviSwitchAdapter switchAdapter;
     //切换导航栏
     @ViewInject(R.id.navi_view_pager)
     private ViewPager mSearchVp;
-
-    BtmNaviSwitchAdapter switchAdapter;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ViewUtils.inject(this);
-        initialView();
-    }
-
-
-    private void initialView() {
-        switchAdapter = new BtmNaviSwitchAdapter(getSupportFragmentManager());
-        mSearchVp = (ViewPager) findViewById(R.id.navi_view_pager);
-        mSearchVp.setAdapter(switchAdapter);
-        mSearchVp.setOnPageChangeListener(mPageChgListener);
-    }
-
     private ViewPager.OnPageChangeListener mPageChgListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrollStateChanged(int arg0) {
@@ -69,6 +47,21 @@ public class MainActivity extends FragmentActivity {
 
 
     };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ViewUtils.inject(this);
+        initialView();
+    }
+
+    private void initialView() {
+        switchAdapter = new BtmNaviSwitchAdapter(getSupportFragmentManager());
+        mSearchVp.setOffscreenPageLimit(0);
+        mSearchVp.setAdapter(switchAdapter);
+        mSearchVp.setOnPageChangeListener(mPageChgListener);
+    }
 
     private void setSelectButtonState(int curId) {
 

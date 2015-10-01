@@ -35,6 +35,16 @@ public class HealthFileFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        System.out.println("1");
+
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            //fragment可见时执行加载数据或者进度条等
+        } else {
+            //不可见时不执行操作
+        }
     }
 }

@@ -30,14 +30,13 @@ import java.util.Map;
 public class MyDoctorFragment extends Fragment {
 
 
+    @ViewInject(R.id.myDoctorFragment_listView)
+    public ListView listView;
+    private List<Map<String, Object>> data;
+
     public MyDoctorFragment() {
         // Required empty public constructor
     }
-
-    private List<Map<String, Object>> data;
-
-    @ViewInject(R.id.myDoctorFragment_listView)
-    public ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,6 +64,17 @@ public class MyDoctorFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            //fragment可见时执行加载数据或者进度条等
+        } else {
+            //不可见时不执行操作
+        }
+    }
+
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
